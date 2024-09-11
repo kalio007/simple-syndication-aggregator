@@ -5,8 +5,8 @@ CREATE TABLE users (
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP NOT NULL,
     name TEXT NOT NULL
-)
+);
 
 -- +goose down
 
-DROP TABLE users
+DROP TABLE IF EXISTS users;

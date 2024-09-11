@@ -1,0 +1,11 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "sql/queries"
+    schema: "sql/schema"
+    database:
+      uri: "postgres://postgres:postgres@localhost:5432/blogator"
+    gen:
+      go:
+        out: "db"
+        sql_package: "pgx/v5"
